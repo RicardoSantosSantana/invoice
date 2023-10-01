@@ -20,14 +20,15 @@ type InvoiceData struct {
 	DueDate string
 }
 
-type Image struct {
-	Logo string
+type HtmlResources struct {
+	Logo       string
+	DateFromTo string
 }
 
 type InvoiceParams struct {
 	HourControlStr
 	InvoiceData
-	Image
+	HtmlResources
 	Params
 }
 
@@ -40,13 +41,15 @@ type Params struct {
 
 func getInvoiceParams(h HourControlStr, i InvoiceData, p Params) InvoiceParams {
 
-	image := Image{
-		Logo: logoImage(),
+	image := HtmlResources{
+		Logo:       logoImage(),
+		DateFromTo: GeneratePreviousMonthInterval(),
 	}
+
 	return InvoiceParams{
 		HourControlStr: h,
 		InvoiceData:    i,
-		Image:          image,
+		HtmlResources:  image,
 		Params:         p,
 	}
 }

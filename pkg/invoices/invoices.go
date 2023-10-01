@@ -8,6 +8,24 @@ import (
 	"time"
 )
 
+func GeneratePreviousMonthInterval() string {
+	// Obter a data atual
+	currentTime := time.Now()
+
+	// Encontrar o primeiro dia do mês atual
+	firstDayCurrentMonth := time.Date(currentTime.Year(), currentTime.Month(), 1, 0, 0, 0, 0, time.UTC)
+
+	// Encontrar o último dia do mês anterior
+	lastDayPreviousMonth := firstDayCurrentMonth.AddDate(0, 0, -1)
+
+	// Encontrar o primeiro dia do mês anterior
+	firstDayPreviousMonth := time.Date(lastDayPreviousMonth.Year(), lastDayPreviousMonth.Month(), 1, 0, 0, 0, 0, time.UTC)
+
+	// Formatando a string de saída
+	output := fmt.Sprintf("<p>From %02d.%02d.%d to %02d.%02d.%d</p>", firstDayPreviousMonth.Day(), int(firstDayPreviousMonth.Month()), firstDayPreviousMonth.Year(), lastDayPreviousMonth.Day(), int(lastDayPreviousMonth.Month()), lastDayPreviousMonth.Year())
+	return output
+}
+
 func GenerateInvoiceData(prefix string) InvoiceData {
 	// Obter a data atual
 	currentTime := time.Now()

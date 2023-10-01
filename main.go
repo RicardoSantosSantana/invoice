@@ -22,18 +22,21 @@ func main2() {
 }
 func main() {
 
-	//params := invoice.RequestParams()
-	params := invoice.Params{}
-	params.Prefix = "RS"
-	params.Tax = 14
-	params.Url = "file:///home/mirian/Downloads/RS-2023-08%20-%20Ricardo%20Santana%20-%20.pdf"
-	params.WorkedHoursStr = "154:05:54"
+	params := invoice.RequestParams()
+
+	// params := invoice.Params{}
+	// params.Prefix = "RS"
+	// params.Tax = 14
+	// params.Url = "file:///home/mirian/Downloads/RS-2023-08%20-%20Ricardo%20Santana%20-%20.pdf"
+	// params.WorkedHoursStr = "154:05:54"
 
 	hour := invoice.HoursControlStr(params.WorkedHoursStr, params.Tax)
 	invoiceData := invoice.GenerateInvoiceData(params.Prefix)
 
 	invoice.GenerateHTML(hour, invoiceData, params)
 
+	fmt.Println(hour)
 	fmt.Println(invoiceData)
+	fmt.Println(params)
 
 }

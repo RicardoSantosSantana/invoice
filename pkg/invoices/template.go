@@ -9,6 +9,7 @@ import (
 )
 
 func GenerateHTML(h HourControlStr, i InvoiceData, p Params) error {
+
 	InvoiceParams := getInvoiceParams(h, i, p)
 
 	// Carregar o arquivo de template
