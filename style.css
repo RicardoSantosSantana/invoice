@@ -1,0 +1,41 @@
+body{
+    font-family: "Lato", sans-serif;
+    line-height: 1em;
+    color: #54578a;
+    margin: 10px;
+} 
+.title{
+    font-size: 2em;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+}
+img{
+    max-width: 150px;
+    max-height: 150px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.part1{
+    font-size: 0.7em;
+    padding: 0px;
+    padding-left: 40px;
+    margin: 0px;
+}
+.part2{
+    font-size: 0.7em;
+    padding: 0px;
+    margin: 0px 5px;
+}
+.back{    
+    background-color:#54578a; 
+    color: #fff;
+    padding: 15px 5px;
+    margin-left: 2px;
+}
+.value{
+    margin-top: 25px;
+    text-align: center;
+}
+.left{
+    text-align: right;
+}
