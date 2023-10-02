@@ -1,41 +1,84 @@
-body{
-    font-family: "Lato", sans-serif;
-    line-height: 1em;
+body {
+    font-family: "Roboto";
+    line-height: 1.4em;
     color: #54578a;
     margin: 10px;
-} 
-.title{
-    font-size: 2em;
-    text-align: center;
+
+}
+
+img {
+    width: 180px;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+
+.grandtotal {
+    margin-left: 50%;
+}
+
+.grandtotal span {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.title {
+    font-size: 1.5em;
+    text-align: left;
     margin: 10px 0px 20px 0px;
 }
-img{
-    max-width: 150px;
+
+.subtitle {
+    font-size: 1.2em;
+    text-align: left;
+    margin: 10px 0px 20px 0px;
+
+}
+
+.center {
     max-height: 150px;
     padding: 0px;
     margin-bottom: 20px;
 }
-.part1{
-    font-size: 0.7em;
+
+.part1 {
+    font-size: 0.8em;
     padding: 0px;
     padding-left: 40px;
     margin: 0px;
 }
-.part2{
-    font-size: 0.7em;
-    padding: 0px;
-    margin: 0px 5px;
+
+.fontmedium {
+    font-size: 0.9em;
 }
-.back{    
-    background-color:#54578a; 
+
+.paragraph_01 p {
+    font-size: 1.1em;
+    margin: 0px;
+}
+
+.paragraph_02 p {
+    font-size: 1.1em;
+    margin: 0px;
+    text-align: right;
+}
+
+.backgroud div {
+    background-color: #54578a;
     color: #fff;
     padding: 15px 5px;
-    margin-left: 2px;
+    border-left: 2px;
+    text-align: center;
+    font-weight: bold;
 }
-.value{
+
+.value {
     margin-top: 25px;
     text-align: center;
 }
-.left{
+
+.left {
     text-align: right;
 }
